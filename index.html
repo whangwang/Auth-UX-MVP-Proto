@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UniLife Student Portal</title>
+    
+    <!-- Design Token Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Source Sans Pro"', 'sans-serif'], // Body, H2-H4
+              serif: ['"Fraunces"', 'serif'], // H1
+            },
+            boxShadow: {
+              'card': '0 8px 16px rgba(0, 0, 0, 0.08)', // Portal_FlexCard_Shadow
+              'sm': '0 1px 2px rgba(0, 0, 0, 0.05)',
+            },
+            borderRadius: {
+              DEFAULT: '0.25rem',
+              'md': '0.375rem',
+              'lg': '0.5rem', // Standard radius for inputs/buttons based on image
+              'xl': '0.75rem',
+              '2xl': '1rem',
+            },
+            colors: {
+              // Primitives/Mode 1 Mapping
+              neutral: {
+                100: '#f4f4f4', // Secondary Surface
+                200: '#e0e0e0', // Border
+                300: '#cdcdcd',
+                400: '#bababa',
+                500: '#8c8c8c',
+                600: '#707070', // Tertiary Text
+                800: '#414141', // Secondary Text
+                1000: '#222222', // Primary Text
+              },
+              brand: {
+                100: '#f3f3f6',
+                200: '#dddfe7',
+                300: '#cacdd9',
+                400: '#b5baca',
+                500: '#8389a5',
+                600: '#656c8b',
+                700: '#48527a',
+                800: '#333f6a',
+                900: '#212e5d',
+                1000: '#0f1d51',
+                1100: '#000f46', // Brand Color (Dark Navy)
+                1200: '#000b34',
+              },
+              interactive: {
+                DEFAULT: '#0d6cdd', // interactive-600 (Primary Action)
+                100: '#eaf4fe',
+                200: '#c8dffc',
+                300: '#a7cdf9',
+                400: '#8dbff7',
+                500: '#378df1',
+                600: '#0d6cdd',
+                700: '#004ead',
+                800: '#003f8b',
+                900: '#002f69',
+                1000: '#002249',
+                hover: '#004ead',   // interactive-700
+                link: '#003f8b',    // interactive-800
+                surface: '#eaf4fe', // interactive-100
+              },
+              // Semantic Colors
+              success: {
+                DEFAULT: '#60751f', // green-600
+                bg: '#f2f6e2',      // green-100
+              },
+              warning: {
+                DEFAULT: '#ac5907', // yellow-600
+                400: '#e9b11e',     // yellow-400 (Bright for dark bg)
+                bg: '#fff5cb',      // yellow-100
+              },
+              error: {
+                DEFAULT: '#db1927', // red-600
+                bg: '#fff1f2',      // red-100
+              },
+              info: {
+                DEFAULT: '#1f7593', // blue-600
+                bg: '#e3f6fd',      // blue-100
+              }
+            }
+          }
+        }
+      }
+    </script>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.10.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-D0bAaSHT.js"></script>
+</head>
+  <body class="bg-neutral-100 text-neutral-1000 antialiased font-sans">
+    <div id="root"></div>
+</body>
+</html>
